@@ -1,3 +1,3 @@
-# Bric Core
+# bric-contract-starter
 
-This repository contains the core smart contracts for the Bric Protocol.
+bric contract starter
