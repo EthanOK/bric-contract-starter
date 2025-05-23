@@ -16,6 +16,7 @@
     "test": "npx hardhat test && forge test -vvv",
     "test:hh": "npx hardhat test",
     "test:ff": "forge test -vvv",
+    "node": "anvil --fork-url sepolia",
     "format": "prettier -w contracts/**/* test_foundry/**/* test/**/*"
   },
   "devDependencies": {

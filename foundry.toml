@@ -11,6 +11,7 @@ evm_version = 'cancun'
 
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
+localhost = "http://127.0.0.1:8545"
 
 [etherscan]
 sepolia = { key = "${ETHERSCAN_API_KEY}" }

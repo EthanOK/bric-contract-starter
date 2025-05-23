@@ -23,3 +23,4 @@ contract LockScript is Script {
 
 // deploy and verify
 // forge script script/Lock.s.sol --rpc-url sepolia --broadcast --verify
+// forge script script/Lock.s.sol --rpc-url localhost --broadcast
