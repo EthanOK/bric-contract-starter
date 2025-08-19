@@ -581,7 +581,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-ethers@npm:3.1.0":
+"@nomicfoundation/hardhat-ethers@npm:^3.1.0":
   version: 3.1.0
   resolution: "@nomicfoundation/hardhat-ethers@npm:3.1.0"
   dependencies:
@@ -605,7 +605,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-ignition-ethers@npm:0.15.14":
+"@nomicfoundation/hardhat-ignition-ethers@npm:^0.15.14":
   version: 0.15.14
   resolution: "@nomicfoundation/hardhat-ignition-ethers@npm:0.15.14"
   peerDependencies:
@@ -618,7 +618,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-ignition@npm:0.15.13":
+"@nomicfoundation/hardhat-ignition@npm:^0.15.13":
   version: 0.15.13
   resolution: "@nomicfoundation/hardhat-ignition@npm:0.15.13"
   dependencies:
@@ -636,7 +636,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-network-helpers@npm:1.1.0":
+"@nomicfoundation/hardhat-network-helpers@npm:^1.1.0":
   version: 1.1.0
   resolution: "@nomicfoundation/hardhat-network-helpers@npm:1.1.0"
   dependencies:
@@ -647,7 +647,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-toolbox@npm:6.1.0":
+"@nomicfoundation/hardhat-toolbox@npm:^6.1.0":
   version: 6.1.0
   resolution: "@nomicfoundation/hardhat-toolbox@npm:6.1.0"
   peerDependencies:
@@ -673,7 +673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-verify@npm:2.1.1":
+"@nomicfoundation/hardhat-verify@npm:^2.1.1":
   version: 2.1.1
   resolution: "@nomicfoundation/hardhat-verify@npm:2.1.1"
   dependencies:
@@ -1041,7 +1041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typechain/ethers-v6@npm:0.5.1":
+"@typechain/ethers-v6@npm:^0.5.1":
   version: 0.5.1
   resolution: "@typechain/ethers-v6@npm:0.5.1"
   dependencies:
@@ -1578,16 +1578,16 @@ __metadata:
   resolution: "bric-contract-starter@workspace:."
   dependencies:
     "@nomicfoundation/hardhat-chai-matchers": "npm:^2.0.0"
-    "@nomicfoundation/hardhat-ethers": "npm:3.1.0"
+    "@nomicfoundation/hardhat-ethers": "npm:^3.1.0"
     "@nomicfoundation/hardhat-foundry": "npm:^1.1.3"
-    "@nomicfoundation/hardhat-ignition": "npm:0.15.13"
-    "@nomicfoundation/hardhat-ignition-ethers": "npm:0.15.14"
-    "@nomicfoundation/hardhat-network-helpers": "npm:1.1.0"
-    "@nomicfoundation/hardhat-toolbox": "npm:6.1.0"
-    "@nomicfoundation/hardhat-verify": "npm:2.1.1"
+    "@nomicfoundation/hardhat-ignition": "npm:^0.15.13"
+    "@nomicfoundation/hardhat-ignition-ethers": "npm:^0.15.14"
+    "@nomicfoundation/hardhat-network-helpers": "npm:^1.1.0"
+    "@nomicfoundation/hardhat-toolbox": "npm:^6.1.0"
+    "@nomicfoundation/hardhat-verify": "npm:^2.1.1"
     "@openzeppelin/contracts": "npm:4.9.6"
     "@openzeppelin/contracts-upgradeable": "npm:4.9.3"
-    "@typechain/ethers-v6": "npm:0.5.1"
+    "@typechain/ethers-v6": "npm:^0.5.1"
     "@typechain/hardhat": "npm:^9.0.0"
     "@types/chai": "npm:^4.2.0"
     "@types/mocha": "npm:>=9.1.0"
@@ -1596,7 +1596,7 @@ __metadata:
     ethers: "npm:^6.4.0"
     hardhat: "npm:^2.26.3"
     hardhat-contract-sizer: "npm:^2.10.1"
-    hardhat-gas-reporter: "npm:2.3.0"
+    hardhat-gas-reporter: "npm:^2.3.0"
     husky: "npm:^9.1.7"
     prettier: "npm:3.6.2"
     prettier-plugin-solidity: "npm:2.1.0"
@@ -2958,7 +2958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hardhat-gas-reporter@npm:2.3.0":
+"hardhat-gas-reporter@npm:^2.3.0":
   version: 2.3.0
   resolution: "hardhat-gas-reporter@npm:2.3.0"
   dependencies:
