@@ -1,9 +1,9 @@
-import { HardhatUserConfig } from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
-import "hardhat-contract-sizer";
-import "@nomicfoundation/hardhat-foundry";
+import hardhatToolboxMochaEthersPlugin from "@nomicfoundation/hardhat-toolbox-mocha-ethers";
+import hardhatContractSizer from "@solidstate/hardhat-contract-sizer";
+import { defineConfig } from "hardhat/config";
 
-const config: HardhatUserConfig = {
+export default defineConfig({
+  plugins: [hardhatToolboxMochaEthersPlugin, hardhatContractSizer],
   solidity: {
     version: "0.8.26",
     settings: {
@@ -17,11 +17,9 @@ const config: HardhatUserConfig = {
   },
   contractSizer: {
     alphaSort: true,
-    disambiguatePaths: false,
     runOnCompile: false,
     strict: true,
     only: [],
+    unit: "KiB",
   },
-};
-
-export default config;
+});
