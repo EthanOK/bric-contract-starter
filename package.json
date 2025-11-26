@@ -59,10 +59,10 @@
     "contracts/**/*.sol": [
       "prettier --write"
     ],
-    "test_foundry/**/*.sol": [
+    "test_forge/**/*.sol": [
       "prettier --write"
     ],
-    "test/**/*.{js,ts}": [
+    "test/**/*.{js,ts,sol}": [
       "prettier --write"
     ]
   },
