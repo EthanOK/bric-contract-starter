@@ -13,13 +13,13 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "build": "npx hardhat build && forge build",
-    "size": "npx hardhat contract-size list && forge build --sizes",
-    "test": "npx hardhat test && forge test -vvv",
-    "test:hh": "npx hardhat test",
+    "build": "yarn hardhat build && forge build",
+    "size": "yarn hardhat contract-size list && forge build --sizes",
+    "test": "yarn hardhat test && forge test -vvv",
+    "test:hh": "yarn hardhat test",
     "test:ff": "forge test -vvv",
-    "node": "anvil --fork-url sepolia",
-    "format": "prettier -w contracts/**/* test_solidity/**/* test/**/*"
+    "node": "anvil --fork-url hoodi",
+    "format": "prettier -w contracts/**/* test_forge/**/* test/**/*"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.5",
@@ -28,17 +28,18 @@
     "@types/chai": "^4.2.0",
     "@types/chai-as-promised": "^8.0.1",
     "@types/mocha": ">=10.0.10",
-    "@types/node": "^22.8.5",
+    "@types/node": "^24.10.0",
     "chai": "^5.1.2",
+    "dotenv": "^17.2.3",
     "ethers": "^6.14.0",
     "hardhat": "^3.0.15",
     "husky": "^9.1.7",
     "mocha": "^11.0.0",
     "prettier": "3.6.2",
-    "prettier-plugin-solidity": "2.1.0",
+    "prettier-plugin-solidity": "2.2.0",
     "ts-node": ">=8.0.0",
-    "typechain": "^8.3.0",
-    "typescript": "~5.8.0"
+    "typechain": "^8.3.2",
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "@openzeppelin/contracts": "5.5.0",

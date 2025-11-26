@@ -16,15 +16,15 @@ contract LockTest is Test {
         console.log("deployer: ", deployer);
 
         // TODO: Fork Sepolia
-        vm.createSelectFork("sepolia");
+        // vm.createSelectFork("sepolia");
         console.log("chainId: ", block.chainid);
 
         vm.deal(deployer, 1000 ether);
 
-        vm.startBroadcast(deployer);
+        vm.startPrank(deployer);
         lock = new Lock{value: 100 ether}(block.timestamp + 60 days);
 
-        vm.stopBroadcast();
+        vm.stopPrank();
     }
 
     function test_Lock() public {
@@ -34,8 +34,10 @@ contract LockTest is Test {
         // TODO: Set timestamp
         vm.warp(block.timestamp + 61 days);
 
-        vm.startBroadcast(owner);
+        vm.startPrank(owner);
         lock.withdraw();
-        vm.stopBroadcast();
+        vm.stopPrank();
     }
 }
+
+// forge test --match-contract LockTest -vvv --chain hoodi
