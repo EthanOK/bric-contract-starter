@@ -1,9 +1,10 @@
-import { HardhatUserConfig } from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
-import "hardhat-contract-sizer";
-import "@nomicfoundation/hardhat-foundry";
+import hardhatToolboxMochaEthersPlugin from "@nomicfoundation/hardhat-toolbox-mocha-ethers";
+import hardhatContractSizer from "@solidstate/hardhat-contract-sizer";
+import { defineConfig } from "hardhat/config";
+import "dotenv/config";
 
-const config: HardhatUserConfig = {
+export default defineConfig({
+  plugins: [hardhatToolboxMochaEthersPlugin, hardhatContractSizer],
   solidity: {
     version: "0.8.26",
     settings: {
@@ -17,11 +18,19 @@ const config: HardhatUserConfig = {
   },
   contractSizer: {
     alphaSort: true,
-    disambiguatePaths: false,
     runOnCompile: false,
     strict: true,
     only: [],
+    unit: "KiB",
   },
-};
-
-export default config;
+  test: {
+    mocha: {
+      timeout: 1000000,
+    },
+    solidity: {
+      forking: {
+        // url: `${process.env.HOODI_RPC_URL}` || "https://0xrpc.io/hoodi",
+      },
+    },
+  },
+});
